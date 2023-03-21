@@ -15,9 +15,7 @@ public class dropdownexample1 {
 
 	public static void main(String[] args) {
 		try {
-			ChromeOptions co=new ChromeOptions();
-			co.addArguments("__remote-allow-origins=*");
-			WebDriver driver = new ChromeDriver(co);
+			ChromeDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.get("https://www.webmath.com");
